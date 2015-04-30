@@ -40,22 +40,38 @@
 	<div class="wrapper">
 		<h1>Hello Github</h1>
 		<p>My First upload to the Github community...</p>
+<<<<<<< HEAD
 		
 		<label>Please Enter Your Name:</label><br>
 		<input type="text" class="inputBox">
 		<button class="inputBtn">Click Me</button>
 
+=======
+		<label for="inputBox">Please Enter Your Name:</label><br>
+		<input type="text" class="inputBox">
+		<button class="inputButton">Click Me</button>
+>>>>>>> feature1
 		<footer>Ben Tansey 2015</footer>
 	</div>
 
 	<script type="text/javascript">
 		$(function(){
+<<<<<<< HEAD
 			$(".inputBtn").click(function(){
 				var inputVal = $(".inputBox").val();
 				if(inputVal){
 					alert("Hello " + inputVal);
 				}else{
 					alert("I see how it is, you don't want to supply your name, Ok well Hello anyways!");
+=======
+			$(".inputButton").click(function(){
+			var inputVal = $(".inputBox").val();
+				if(inputVal){
+					alert("Hello " + inputVal);
+				} else{
+					alert("You don't want to enter your name?");
+					alert("Ok, well hello anyways!");
+>>>>>>> feature1
 				}
 			});
 		});
