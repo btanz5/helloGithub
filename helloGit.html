@@ -6,6 +6,8 @@
 	<!--Google Font Family Links-->
 	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	
 	<style type="text/css">
 		body {
@@ -38,8 +40,25 @@
 	<div class="wrapper">
 		<h1>Hello Github</h1>
 		<p>My First upload to the Github community...</p>
+		<label for="inputBox">Please Enter Your Name:</label><br>
+		<input type="text" class="inputBox">
+		<button class="inputButton">Click Me</button>
 		<footer>Ben Tansey 2015</footer>
 	</div>
+
+	<script type="text/javascript">
+		$(function(){
+			$(".inputButton").click(function(){
+			var inputVal = $(".inputBox").val();
+				if(inputVal){
+					alert("Hello " + inputVal);
+				} else{
+					alert("You don't want to enter your name?");
+					alert("Ok, well hello anyways!");
+				}
+			});
+		});
+	</script>
  
 </body>
 </html>
